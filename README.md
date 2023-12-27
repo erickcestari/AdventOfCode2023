@@ -10,9 +10,11 @@ The repository is organized by days, with each day's solutions and input data pl
 ./
 │
 ├── day-01/
-│   └── main.rs
+│   └── src/
+|       └── main.rs
 │
 ├── day-02/
-│   └── main.rs
+│   └── src/
+|       └── main.rs
 │
 └── ...

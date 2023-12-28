@@ -9,7 +9,7 @@ fn main() -> io::Result<()> {
     let mut sum = 0;
 
     for line in lines.iter() {
-        sum += sum_numbers_adjacents_to_symbols(line);
+        sum += calculate_points(line);
     }
 
     println!("{}", sum);
@@ -17,7 +17,7 @@ fn main() -> io::Result<()> {
     Ok(())
 }
 
-fn sum_numbers_adjacents_to_symbols(line: &str) -> usize {
+fn calculate_points(line: &str) -> usize {
     let delimiters = [':', '|'];
     let mut parts: Vec<&str> = vec![line];
 
